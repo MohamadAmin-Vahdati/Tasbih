@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">تسبیح</string>
+    <string name="zekr_rouz">ذکر روز</string>
+    <string name="tasbihat_hazrat_zahra">تسبیحات حضرت زهرا (س)</string>
+    <string name="zekr_shomar">ذکر شمار</string>
+    <string name="salavat_shomar">صلوات شمار</string>
+    <string name="tanzimat">تنظیمات پشت زمینه</string>
+    <string name="shanbe">شنبه</string>
+    <string name="yek_shanbe">یک شنبه</string>
+    <string name="do_shanbe">دوشنبه</string>
+    <string name="se_shanbe">سه شنبه</string>
+    <string name="chahar_shanbe">چهار شنبه</string>
+    <string name="panj_shanbe">پنج شنبه</string>
+    <string name="jome">جمعه</string>
+    <string name="wall1">تصویر زمینه یک</string>
+    <string name="wall2">تصویر زمینه دو</string>
+    <string name="wall3">تصویر زمینه سه</string>
+    <string name="wall4">تصویر زمینه چهار</string>
+    <string name="wall5">تصویر زمینه پنج</string>
+    <string name="confirm">تایید</string>
+    <string name="add_zekr">اضافه کردن ذکر جدید</string>
+    <string name="counted">تعداد شمارش شده :</string>
+    <string name="fullcount">تعداد دوره :</string>
+    <string name="delete_zekr">حذف ذکر</string>
+    <string name="Continue">ادامه</string>
+    <string name="reset">شروع دوباره</string>
+    <string name="settings">تنظیم دوره</string>
+    <string name="start_of">شروع ذکر از :</string>
+    <string name="unlimited">بدون محدودیت</string>
+    <string name="suggested">مقدار توصیه شده :</string>
+    <string name="are_you_sure">آیا مطمئن هستید ؟</string>
+    <string name="yes">بلی</string>
+    <string name="no">خیر</string>
+    <string name="Zekr">ذکر :</string>
+    <string name="translate">ترجمه :</string>
+    <string name="zekr_finished">ذکر به پایان رسید. </string>
+    <string name="Return">بازگشت</string>
+    <string name="tasbih">TASBIH</string>
+
+</resources>

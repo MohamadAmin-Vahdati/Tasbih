@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:background="@drawable/bg_for_zekr"
+    android:layout_marginBottom="12dp"
+    android:layout_marginTop="12dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:id="@+id/Zekr_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="start"
+        android:textColor="@color/white"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/mitra"
+        android:id="@+id/ZekrforAdapter"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/counted"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_alignEnd="@id/ZekrforAdapter"
+        android:layout_marginStart="2dp"
+        android:gravity="center"
+        android:id="@+id/tedad_gozarande2"
+        android:layout_below="@id/ZekrforAdapter"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mitra"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/GreyText"
+        android:id="@+id/tedad_gozarande"
+        android:gravity="center"
+        android:layout_below="@id/ZekrforAdapter"
+        android:layout_toStartOf="@id/tedad_gozarande2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mitra"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fullcount"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="2dp"
+        android:gravity="center"
+        android:id="@+id/tedad_dore2"
+        android:layout_toStartOf="@id/tedad_gozarande"
+        android:layout_below="@id/ZekrforAdapter"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mitra"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#E8FFFFFF"
+        android:id="@+id/tedad_dore"
+        android:gravity="center"
+        android:layout_toStartOf="@id/tedad_dore2"
+        android:layout_below="@id/ZekrforAdapter"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mitra"/>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_zekr"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_for_delete"
+        android:textSize="19sp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/ZekrforAdapter"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_marginTop="9dp"
+        android:id="@+id/btn_Delete"
+        android:fontFamily="@font/mitra"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+</RelativeLayout>

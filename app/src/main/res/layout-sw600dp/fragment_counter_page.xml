@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_CounterPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:id="@+id/layout_zekr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/bg_for_zekr"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/TV_Zekr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/mitra"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/TV_Translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TV_Zekr"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/mitra"
+            android:gravity="center"
+            android:textColor="@color/WhiteTranslate"
+            android:textSize="24sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_Sefr"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_btn"
+        app:layout_constraintBottom_toTopOf="@+id/btn_counter"
+        app:layout_constraintEnd_toEndOf="@+id/btn_counter"
+        app:layout_constraintStart_toEndOf="@+id/btn_counter"
+        app:layout_constraintTop_toTopOf="@+id/btn_counter"
+        app:srcCompat="@drawable/ic_repeat" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_btn"
+        app:layout_constraintBottom_toTopOf="@+id/btn_counter"
+        app:layout_constraintEnd_toStartOf="@+id/btn_counter"
+        app:layout_constraintStart_toStartOf="@+id/btn_counter"
+        app:layout_constraintTop_toTopOf="@+id/btn_counter"
+        app:srcCompat="@drawable/ic_remove" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mitra"
+        android:textColor="@color/WhiteTranslate"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_counter"
+        app:layout_constraintEnd_toEndOf="@+id/btn_counter"
+        app:layout_constraintStart_toStartOf="@+id/btn_counter"
+        app:layout_constraintTop_toTopOf="@+id/btn_counter"
+        app:layout_constraintVertical_bias="0.85" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_counter"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@drawable/selector_counter"
+        android:fontFamily="@font/mitra"
+        android:textColor="@color/white"
+        android:textSize="43sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_zekr"
+        app:layout_constraintVertical_bias="0.6" />
+
+
+    <com.mvp.tasbih.Presenter.Utility.CircleProgress
+        android:id="@+id/circleProgress"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_zekr"
+        app:layout_constraintVertical_bias="0.6" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_play"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selector_player"
+        app:layout_constraintBottom_toTopOf="@+id/btn_repeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_play" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_repeat"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:background="@drawable/bg_for_repeat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_play"
+        app:layout_constraintStart_toStartOf="@+id/btn_play"
+        app:layout_constraintTop_toBottomOf="@+id/layout_zekr"
+        app:layout_constraintVertical_bias="0.96"
+        app:srcCompat="@drawable/ic_repeat_player" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

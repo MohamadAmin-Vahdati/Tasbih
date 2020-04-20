@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@android:color/transparent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="@string/zekr_rouz"
+        android:background="@drawable/bg_for_options_1"
+        android:gravity="center"
+        android:id="@+id/btn_ZekrRooz"
+        android:fontFamily="@font/mitra"
+        android:layout_alignStart="@id/btn_Tasbihat"
+        android:layout_alignEnd="@id/btn_Tasbihat"
+        android:layout_above="@id/btn_Tasbihat"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="@string/tasbihat_hazrat_zahra"
+        android:background="@drawable/bg_for_options_1"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btn_Tasbihat"
+        android:fontFamily="@font/mitra"
+        android:layout_above="@id/btn_ZekrShomar"
+        android:layout_centerHorizontal="true" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="@string/zekr_shomar"
+        android:background="@drawable/bg_for_options_1"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btn_ZekrShomar"
+        android:fontFamily="@font/mitra"
+        android:layout_alignStart="@id/btn_Tasbihat"
+        android:layout_alignEnd="@id/btn_Tasbihat"
+        android:layout_centerInParent="true"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="@string/salavat_shomar"
+        android:background="@drawable/bg_for_options_1"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btn_SalavatShomar"
+        android:fontFamily="@font/mitra"
+        android:layout_alignStart="@id/btn_Tasbihat"
+        android:layout_alignEnd="@id/btn_Tasbihat"
+        android:layout_below="@id/btn_ZekrShomar"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="@string/tanzimat"
+        android:background="@drawable/bg_for_options_1"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btn_SelectWallpaperPage"
+        android:fontFamily="@font/mitra"
+        android:layout_alignStart="@id/btn_Tasbihat"
+        android:layout_alignEnd="@id/btn_Tasbihat"
+        android:layout_below="@id/btn_SalavatShomar"/>
+
+
+
+</RelativeLayout>

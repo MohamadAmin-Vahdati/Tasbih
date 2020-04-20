@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4E4E4E</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="Grey">#4E4E4E</color>
+    <color name="GreyBG">#17FFFFFF</color>
+    <color name="GreyText">#E8FFFFFF</color>
+    <color name="Red">#F12B2B</color>
+    <color name="Green">#338633</color>
+    <color name="GreenFinished">#16D11D</color>
+    <color name="WhiteTranslate">#D2FFFFFF</color>
+    <color name="GreenSplash">#2A3C3B</color>
+    <color name="TasbihColor">#00c9c7</color>
+
+    <color name="ic_launcher_background">#2A3C3B</color>
+
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_for_dialog"
+    android:paddingTop="10dp"
+    android:paddingBottom="30dp"
+    android:paddingEnd="50dp"
+    android:paddingStart="50dp"
+    android:layoutDirection="ltr">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_of"
+        android:textSize="24sp"
+        android:textColor="@color/Grey"
+        android:id="@+id/TV_LastCount"
+        android:fontFamily="@font/mitra"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/ET_LastCount"
+        android:layout_marginBottom="12dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/Grey"
+        android:inputType="number"
+        android:layout_toStartOf="@id/TV_LastCount"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:id="@+id/ET_LastCount"
+        android:backgroundTint="@color/Grey"
+        android:fontFamily="@font/mitra"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fullcount"
+        android:textSize="24sp"
+        android:textColor="@color/Grey"
+        android:id="@+id/TV_FullCount"
+        android:fontFamily="@font/mitra"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/ET_FullCount"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/Grey"
+        android:inputType="number"
+        android:layout_toStartOf="@id/TV_FullCount"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:id="@+id/ET_FullCount"
+        android:backgroundTint="@color/Grey"
+        android:fontFamily="@font/mitra"
+        android:layout_below="@id/ET_LastCount"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unlimited"
+        android:textSize="23sp"
+        android:textColor="@color/Grey"
+        android:checked="false"
+        android:id="@+id/CB_Ultimate"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/Grey"
+        android:fontFamily="@font/mitra"
+        android:layout_below="@id/ET_FullCount"
+        android:layout_alignParentEnd="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suggested"
+        android:textSize="23sp"
+        android:textColor="@color/Green"
+        android:id="@+id/TV_Suggested"
+        android:fontFamily="@font/mitra"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/CB_Ultimate"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="@color/Green"
+        android:gravity="center"
+        android:id="@+id/TV_inputSuggested"
+        android:fontFamily="@font/mitra"
+        android:layout_marginTop="28dp"
+        android:layout_below="@id/CB_Ultimate"
+        android:layout_toStartOf="@id/TV_Suggested"
+        android:layout_marginEnd="4dp"/>
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_for_confrim_grey"
+        android:text="@string/confirm"
+        android:textSize="24sp"
+        android:fontFamily="@font/mitra"
+        android:id="@+id/btn_Confirm"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/TV_Suggested"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_for_dialog"
+    android:paddingTop="15dp"
+    android:paddingBottom="25dp"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:layoutDirection="ltr"
+    android:scrollbars="none">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Zekr"
+            android:layout_gravity="end|top"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/Grey"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="7dp"
+            app:boxStrokeColor="@color/Grey"
+            android:id="@+id/layout_inputZekr">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="3"
+                android:fontFamily="@font/mitra"
+                android:textSize="16sp"
+                android:textColor="@color/Grey"
+                android:id="@+id/ET_inputZekr"
+                android:inputType="textMultiLine" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/translate"
+            app:hintTextColor="@color/Grey"
+            android:layout_gravity="end|top"
+            app:errorEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="7dp"
+            app:boxStrokeColor="@color/Grey"
+            android:layout_below="@id/layout_inputZekr"
+            android:id="@+id/layout_inputTranslate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="3"
+                android:fontFamily="@font/mitra"
+                android:textSize="16sp"
+                android:textColor="@color/Grey"
+                android:id="@+id/ET_inputTranslate"
+                android:inputType="textMultiLine" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fullcount"
+            android:textSize="15sp"
+            android:textColor="@color/Grey"
+            android:id="@+id/TV_inputFullCountAddZekr"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/ET_inputFullCount"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/mitra"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/Grey"
+            android:inputType="number"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:id="@+id/ET_inputFullCount"
+            android:backgroundTint="@color/Grey"
+            android:layout_toStartOf="@id/TV_inputFullCountAddZekr"
+            android:layout_below="@id/layout_inputTranslate"
+            android:fontFamily="@font/mitra"
+            android:layout_alignStart="@id/btn_ConfirmAddZekr"
+            android:layout_marginStart="10dp"/>
+
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unlimited"
+            android:textSize="14sp"
+            android:textColor="@color/Grey"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ET_inputFullCount"
+            android:checked="false"
+            android:id="@+id/CB_UltimateAddZekr"
+            android:layout_marginTop="2dp"
+            android:buttonTint="@color/Grey"
+            android:fontFamily="@font/mitra" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_for_confrim_grey"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btn_ConfirmAddZekr"
+            android:fontFamily="@font/mitra"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/CB_UltimateAddZekr"/>
+    </RelativeLayout>
+
+</ScrollView>
